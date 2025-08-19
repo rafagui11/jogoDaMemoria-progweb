@@ -113,30 +113,7 @@ git commit -m "resolve conflitos"
 
 ---
 
-## 📝 **Boas Práticas para Trabalho em Equipe**
-
-### 1. **Convenção de Commits**
-```bash
-git commit -m "feat: adiciona sistema de login"
-git commit -m "fix: corrige erro na validação"
-git commit -m "docs: atualiza documentação"
-git commit -m "style: formata código"
-git commit -m "refactor: melhora estrutura do código"
-```
-
-### 2. **Comunicação é Fundamental**
-- Combine horários para merges importantes
-- Comunique grandes mudanças antes de fazer
-- Use issues no GitHub para organizar tarefas
-
-### 3. **Trabalho em Arquivos Simultâneos**
-- Dividam tarefas por arquivos/pastas diferentes
-- Combinem quem trabalha em quais componentes
-- Usem reuniões rápidas para alinhamento
-
----
-
-##  **Situações Comuns e Como Resolver**
+                
 
 ### 1. **Commit acidental na branch main**
 ```bash
