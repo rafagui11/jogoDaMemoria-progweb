@@ -9,11 +9,13 @@ cd repositorio
 ```
 O que NÃO fazer
 NUNCA FAÇA GIT INIT PORRA
+```bash
 ❌ Não commitar diretamente na main
 ❌Nunca programe direto na main.
 ❌ Não trabalhar na mesma branch que outros
 ❌ Não fazer push de código quebrado
 ❌ Não ignorar reviews de código
+```
 ---
 
 ### 2. Antes de começar a programar(branches)
