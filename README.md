@@ -7,9 +7,9 @@ Tutorial básico de git: https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cc
 git clone https://github.com/usuario/repositorio.git
 cd repositorio
 ```
-O que NÃO fazer
-NUNCA FAÇA GIT INIT PORRA
+----->O que NÃO fazer<------
 ```bash
+NUNCA FAÇA GIT INIT PORRA
 ❌ Não commitar diretamente na main
 ❌Nunca programe direto na main.
 ❌ Não trabalhar na mesma branch que outros
@@ -31,11 +31,11 @@ git checkout -b feature/minha-tarefa   # Criar nova branch(ramificação) para s
 ---
 
 ### 3. Durante o desenvolvimento
-
+```bash
 ✅ Cada tarefa/bug/feature = 1 branch nova.
 ✅ Nomeie suas branches de forma clara: feature/cadastro-usuario fix/seila
 ✅ Sempre atualize sua branch antes do merge. 
-
+```
 Trabalhe apenas dentro da sua branch pelo amor de deus senhor
 ```bash
 git add .                                 # Adicionar alterações feitas, isso adiciona TODAS, tem que por o ponto final
