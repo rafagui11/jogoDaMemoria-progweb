@@ -1,123 +1,56 @@
 Tutorial básico de git: https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link
 
 
-### 1. **Configuração Inicial do Repositório (apenas uma vez)**
-```bash
+### 1. Configuração inicial (uma vez só)
 
-# Cada membro faz clone localmente:
-git clone https://github.com/usuario/nome-pasta.git
-cd nome-pasta
+```bash
+git clone https://github.com/usuario/repositorio.git
+cd repositorio
+```
+O que NÃO fazer
+NUNCA FAÇA GIT INIT PORRA
+❌ Não commitar diretamente na main
+❌Nunca programe direto na main.
+❌ Não trabalhar na mesma branch que outros
+❌ Não fazer push de código quebrado
+❌ Não ignorar reviews de código
+---
+
+### 2. Antes de começar a programar(branches)
+
+Sempre crie uma branch nova para sua tarefa!!!!!!! --> IMPORTANTEEEEEE 
+
+```bash
+git checkout main        # Ir para a branch principal
+git pull origin main     # primeiro puxar do repositório remoto a versão mais recente do projeto antes de começar a codar
+git checkout -b feature/minha-tarefa   # Criar nova branch(ramificação) para sua tarefa, dai se vc fizer cagada não vai ter estragado o projeto por que vc fez uma ramificação dele
 ```
 
 ---
 
-### 1. **Antes de começar a codar:**
-```bash
-# Atualizar repositório local
-git checkout main
-git pull origin main (pra pegar a ultima versão do repositório)
+### 3. Durante o desenvolvimento
 
-# Criar nova branch para sua tarefa
-git checkout -b feature/nome-da-sua-feature
+✅ Cada tarefa/bug/feature = 1 branch nova.
+✅ Nomeie suas branches de forma clara: feature/cadastro-usuario fix/seila
+✅ Sempre atualize sua branch antes do merge. 
+
+Trabalhe apenas dentro da sua branch pelo amor de deus senhor
+```bash
+git add .                                 # Adicionar alterações feitas, isso adiciona TODAS, tem que por o ponto final
+git commit -m "feat: descreva bem o que fez"   # Registrar alteração: detalhe o mais possível as mudanças que vc fez pq isso fica registrado tb, coloque oq tem que arrumar oq arrumou etc TUDO    
+git push -u origin feature/minha-tarefa   # Enviar para o GitHub: repositório remoto. --> aqui pode dar muitos erros preste bem atenção, vai usando o git status pra entender o pq do probelma
 ```
 
-### 2. **Durante o desenvolvimento:**
-```bash
-# Fazer commits frequentes e atômicos
-git add .
-git commit -m "feat: adiciona funcionalidade X"(comentar detalhadamente o que fez)
+faça commits pequenos e claros! e nao de uma vez 
 
-# Enviar branch para repositório remoto
-git push -u origin feature/nome-da-sua-feature
-```
+---
 
-### 3. **Finalizando uma funcionalidade:**
+### 4. Quando terminar
+
 ```bash
-# Atualizar com a main recente
 git fetch origin
-git merge origin/main
+git merge origin/main     # Mescla a sua ramificação com o original, ou seja, adiciona suas mudanças no projeto de verdade 
 
-# Resolver conflitos se necessário, depois:
-git push origin feature/nome-da-sua-feature
-```
-
-### 4. **Criando Pull Request (PR)**
-- No GitHub, vá em "Pull Requests" -> "New Pull Request"
-- Selecione: base: `main` <- compare: `feature/nome-da-sua-feature`
-- Adicione revisores
-- Aguarde aprovação antes do merge
-
----
-
-## **Comandos Essenciais para Trabalho em Equipe**
-
-### Visualizar o estado do repositório:
-```bash
-git status                  # Verifica estado atual
-git log --oneline --graph  # Histórico visual
-git branch -a              # Lista todas branches
-```
-
-### Gerenciamento de branches:
-```bash
-# Listar branches
-git branch
-
-# Criar nova branch
-git checkout -b minha-feature
-
-# Trocar de branch
-git checkout nome-da-branch
-
-# Deletar branch local
-git branch -d nome-da-branch
-
-# Deletar branch remota
-git push origin --delete nome-da-branch
-```
-
-### Sincronização com repositório remoto:
-```bash
-# Buscar alterações sem merge
-git fetch origin
-
-# Atualizar branch local com remote
-git pull origin main
-
-# Forçar atualização (cuidado!)
-git reset --hard origin/main
-```
-
-### Resolução de conflitos:
-```bash
-# Ver arquivos com conflito
-git status
-
-# Abrir arquivo e procurar por <<<<<<<, =======, >>>>>>>
-# Editar para resolver conflitos manualmente
-
-# Após resolver:
-git add arquivo-conflitante.html
-git commit -m "resolve conflitos"
-```
-
----
-
-                
-
-### 1. **Commit acidental na branch main**
-```bash
-# Criar nova branch com os commits
-git branch nova-feature
-git reset --hard origin/main
-```
-
-### 2. **Conflito durante merge**
-```bash
-# Abrir arquivo, resolver manualmente
-git add arquivo-conflitado.css
-git commit -m "resolve merge conflict"
-```
 
 
 
