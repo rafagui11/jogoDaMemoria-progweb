@@ -3,8 +3,6 @@ Tutorial básico de git: https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cc
 
 ### 1. **Configuração Inicial do Repositório (apenas uma vez)**
 ```bash
-# Um membro cria o repositório no GitHub e adiciona os colaboradores:
-# Settings -> Collaborators -> Add people
 
 # Cada membro faz clone localmente:
 git clone https://github.com/usuario/projeto-faculdade.git
