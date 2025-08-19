@@ -1,0 +1,34 @@
+/* 
+  ARQUIVO DE ESTILOS PARA UTILITÁRIOS (utilities.css)
+  Classes auxiliares para estilos comuns
+*/
+
+/* 
+  Classes para display:
+  - .hidden (display: none)
+  - .flex, .inline-flex
+  - .block, .inline-block
+*/
+
+/* 
+  Classes para alinhamento de texto:
+  - .text-center, .text-left, .text-right
+*/
+
+/* 
+  Classes para espaçamento:
+  - Margens (mb-1, mt-2, etc.)
+  - Paddings (pb-1, pt-2, etc.)
+*/
+
+/* 
+  Classes para cores:
+  - .text-primary, .bg-primary, etc.
+  - .success, .warning, .error
+*/
+
+/* 
+  Classes para tamanhos:
+  - Larguras (w-25, w-50, w-100)
+  - Alturas (h-25, h-50, h-100)
+*/
