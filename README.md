@@ -9,14 +9,6 @@ git clone https://github.com/usuario/nome-pasta.git
 cd nome-pasta
 ```
 
-### 2. **Estrutura de Branches Recomendada**
-```
-main          (versão estável)
-develop       (integração de features)
-feature/*     (novas funcionalidades)
-hotfix/*      (correções urgentes)
-```
-
 ---
 
 ### 1. **Antes de começar a codar:**
