@@ -119,11 +119,5 @@ git add arquivo-conflitado.css
 git commit -m "resolve merge conflict"
 ```
 
-### 3. **Histórico bagunçado**
-```bash
-# Fazer rebase para limpar histórico
-git rebase -i HEAD~5  # interativo com últimos 5 commits
-```
-
 
 
