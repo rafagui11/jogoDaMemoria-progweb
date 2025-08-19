@@ -5,8 +5,8 @@ Tutorial básico de git: https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cc
 ```bash
 
 # Cada membro faz clone localmente:
-git clone https://github.com/usuario/projeto-faculdade.git
-cd jogoDaMemoria-progweb
+git clone https://github.com/usuario/nome-pasta.git
+cd nome-pasta
 ```
 
 ### 2. **Estrutura de Branches Recomendada**
