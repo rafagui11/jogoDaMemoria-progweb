@@ -1,0 +1,17 @@
+/*Aq é pra colocar as estilizações gerais q todas as páginas recebem msm*/
+
+:root {
+    --color-background-lighter: #275950;
+    --color-background-darker: #1E1E1E; 
+    font-size: 60%; 
+}
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
