@@ -17,6 +17,27 @@
  * - Cores de tema
  */
 
+ /*
+ 
+ :root {
+    --color-name: #color;
+
+    font-size: 60%; 
+}
+
+
+ 
+ */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+}
 body.index {
   min-height: 100vh;
   display: flex;
