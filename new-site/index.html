@@ -1,4 +1,4 @@
-<!-- 
+<!--
   PÁGINA PRINCIPAL (index.html)
   Estrutura básica do HTML com comentários para cada seção
 -->
@@ -6,27 +6,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- 
-      Meta tags básicas (charset, viewport, título)
-      Links para folhas de estilo CSS (externas)
-      Link para favicon (opcional)
-    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Memória-Login</title>
 </head>
-<body>
-    <!-- 
+<body class="index">
+    <!--
       Container principal da página de login
     -->
-    
-    <!-- 
+    <h1>
+      <img src="img/alzheimer.svg" alt="alzheimer" class="img01">
+        Memória
+      <img src="img/alzheimer.svg" alt="alzheimer" class="img02">
+    </h1>
+    <!--
       Formulário de login:
       - Campo para nome de usuário
       - Campo para senha (type password)
       - Botão de enviar
       - Link para página de cadastro
     -->
-    
-    <!-- 
+    <div class="Formulario">
+      <h2>Login</h2>
+      <form>
+        <label for="email">Email</label>
+        <input
+            placeholder="Digite seu Email"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          >
+        <label for="password">Senha</label>
+        <input
+          placeholder="Senha"
+          type="password"
+          id="password"
+          required>
+
+        <a href="cadastro.html">Criar Conta / Cadastre-se</a>
+        <button>
+          <img src="img/submit.svg" alt="submit">
+        </button>
+      </form>
+    </div>
+    <!--
       Rodapé com informações de copyright e link para validação W3C
     -->
+<footer>
+  <p>Todos os Direitos Reservados</p>
+</footer>
 </body>
+
 </html>
