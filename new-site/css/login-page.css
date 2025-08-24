@@ -11,7 +11,6 @@ body.index {
 }
 h1{
   color: var(--color-text-general);
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 52px;
   display: flex;             /* Coloca texto e imagens na mesma linha */
@@ -42,7 +41,6 @@ h1{
  */
 .Formulario h2{
   color: var(--color-text-general);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   text-align: center;
 
@@ -79,7 +77,6 @@ h1{
 }
 .Formulario a{
   color: var(--color-label-text);
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
   font-size: 12px;
@@ -130,7 +127,6 @@ h1{
 footer{
   color: var(--color-text-general);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   padding: 10px 0;
 

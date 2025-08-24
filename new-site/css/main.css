@@ -6,10 +6,10 @@
     --color-label-text: #d1d6ce; 
     --color-text-general: #ffffff;
     --color-text-hover: #ffffff;
-    font-size: 60%; 
+    font-size: 70%; 
 }
 
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,4 +17,10 @@
 
 html, body{
     height: 100vh;
+}
+
+body{
+    font-family: "Geo", sans-serif;
+    
+
 }
