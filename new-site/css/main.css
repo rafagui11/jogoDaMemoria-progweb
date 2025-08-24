@@ -2,7 +2,10 @@
 
 :root {
     --color-background-lighter: #275950;
-    --color-background-darker: #1E1E1E; 
+    --color-background-darker: #1E1E1E;
+    --color-label-text: #d1d6ce; 
+    --color-text-general: #ffffff;
+    --color-text-hover: #ffffff;
     font-size: 60%; 
 }
 

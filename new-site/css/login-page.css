@@ -10,7 +10,7 @@ body.index {
   margin: 0;
 }
 h1{
-  color: white;
+  color: var(--color-text-general);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 52px;
@@ -41,7 +41,7 @@ h1{
  * - Container da página do jogo
  */
 .Formulario h2{
-  color: white;
+  color: var(--color-text-general);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   text-align: center;
@@ -65,7 +65,7 @@ h1{
 }
 .Formulario input{
   border-radius: 24px;
-  color: white;
+  color: var(--color-text-general);
   border: none;
   width: 200px;
   height: 30px;
@@ -73,16 +73,22 @@ h1{
   text-align: center;
 }
 .Formulario input::placeholder{
-  color: white;
+  color: var(--color-label-text);
   text-align: center;
   opacity: 1;
 }
 .Formulario a{
-  color: white;
+  color: var(--color-label-text);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
   font-size: 12px;
+}
+
+.Formulario a:hover{
+  color: var(--color-text-hover);
+  transition: 400ms;
+  cursor: pointer;
 }
 .Formulario button {
   border-radius: 24px;
@@ -105,6 +111,7 @@ h1{
   overflow: hidden;
 }
 
+
 /*
  * Estilos para formulários:
  * - Campos de input
@@ -121,7 +128,7 @@ h1{
 
 /*Estilos Elementos Rodapés*/
 footer{
-  color: white;
+  color: var(--color-text-general);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
