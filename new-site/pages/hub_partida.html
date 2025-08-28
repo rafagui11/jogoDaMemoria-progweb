@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Memoria - Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/hub_partida.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="title">
+    <h1>
+        <img src="../img/head-logo.svg" alt="head-logo" class="img01">
+        Memória
+        <img src="../img/head-logo.svg" alt="head-logo" class="img02">
+    </h1>
+    <a href="#" class="btn-sair">
+        <img src="../img/logout.svg" alt="Sair"> Sair
+    </a>
+</div>
+
+<div class="painel">
+    <a href="profile.html"><img src="../img/person-circle.svg" class="painel-icon" alt="profile">Perfil</a>
+    <a href="history.html"><img src="../img/Subtract.svg" class="painel-icon" alt="history">Histórico</a>
+    <a href="rank.html"><img src="../img/trophy-fill.svg" class="painel-icon" alt="raking">Ranking</a>
+</div>
+<h2 class="title-hub">CONFIGURAÇÕES DA PARTIDA</h2>
+<div class="retangulo">
+    <div class="options">
+        <input type="radio" name="modo" id="classico" checked> <label for="classico" class="modo-opcao">
+            <p class="title01">Clássico</p>
+            <img class="classic" src="../img/classic_game.svg" alt="classico">
+        </label>
+
+        <input type="radio" name="modo" id="contratempo">
+        <label for="contratempo" class="modo-opcao">
+            <p class="title02">Contratempo</p>
+            <img class="contratempo" src="../img/clock.svg" alt="contratempo">
+        </label>
+    </div>
+
+    <div class="linha"></div>
+
+    <h3 class="subtitulo">Tipo de tabuleiro</h3>
+
+    <div class="config">
+        <div class="tab-options">
+            <input type="radio" name="tabuleiro" id="2x2">
+            <label for="2x2" class="tab-option">2x2</label>
+
+            <input type="radio" name="tabuleiro" id="4x4">
+            <label for="4x4" class="tab-option">4x4</label>
+
+            <input type="radio" name="tabuleiro" id="6x6">
+            <label for="6x6" class="tab-option">6x6</label>
+
+            <input type="radio" name="tabuleiro" id="8x8" checked> <label for="8x8" class="tab-option">8x8</label>
+        </div>
+        <a class="iniciar" href="#">INICIAR</a>
+    </div>
+</div>
+
+</body>
+</html>
