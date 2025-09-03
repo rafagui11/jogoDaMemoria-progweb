@@ -1,0 +1,188 @@
+/* Estilos para a página de Cadastro (register.css) */
+
+/* Corpo da página com o gradiente de fundo padrão */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, var(--color-background-lighter) 0%, var(--color-background-darker) 100%);
+    color: var(--color-text-general);
+    margin: 0;
+    padding: 20px 0; /* Espaçamento vertical */
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do cabeçalho (se ainda não estiverem no main.css) */
+.title {
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Mantém espaço entre os itens */
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do cabeçalho */
+}
+
+/* Estilo específico para o cabeçalho da página de registro */
+.register-header {
+    justify-content: space-between; /* Para empurrar "Memória" para a esquerda e "Sair" para a direita */
+    /* Remove os ícones laterais, se eles estivessem no CSS para .title h1 */
+}
+
+.title h1 {
+    color: white;
+    font-size: 30px;
+    font-family: "Geo", sans-serif; /* Certifique-se que a fonte é aplicada */
+    margin: 0; /* Remove margens padrão que poderiam desalinhá-lo */
+    /* No cabeçalho de registro, não temos os ícones, então removemos qualquer estilo relacionado a eles aqui */
+    /* Se você tem estilos para .img01, .img02 eles não serão aplicados aqui porque as imagens foram removidas do HTML */
+}
+
+/* Botão Sair - estilos reutilizados do main.css ou history.css */
+.btn-sair {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    color: #1E1E1E;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-sair:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-sair img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Container principal do formulário */
+.register-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #00BF9D; /* Cor verde principal do tema */
+    border-radius: 24px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+.register-container h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+    padding-left: 10px; /* Alinhamento com os campos */
+    font-family: "Geo", sans-serif;
+}
+
+/* Layout em grid para o formulário */
+.register-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 15px 40px; /* Espaçamento vertical e horizontal */
+}
+
+/* Estilo para cada campo do formulário (label + input) */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    color: white;
+    font-size: 16px;
+    padding-left: 15px; /* Leve recuo para alinhar com o placeholder */
+    font-family: "Geo", sans-serif;
+}
+
+.form-field input {
+    background-color: #0c6758; /* Tom de verde mais escuro */
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-family: "Geo", sans-serif;
+}
+
+.form-field input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Container para o botão de submit e o link de login */
+.form-actions {
+    grid-column: 2; /* Ocupa a segunda coluna */
+    grid-row: 4 / span 3; /* Começa na 4ª linha e ocupa 3 espaços (ajuste se a altura dos campos mudar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o conteúdo na parte de baixo */
+    align-items: flex-start;
+    padding-left: 15px;
+    gap: 15px; /* Espaçamento entre o botão e o link */
+}
+
+.submit-btn {
+    background-color: #FF6B4A; /* Laranja vibrante */
+    color: white;
+    font-family: "Geo", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e65a3a;
+}
+
+.submit-btn img {
+    width: 20px;
+}
+
+/* Link para a página de login */
+.login-link {
+    color: white;
+    font-size: 14px;
+    font-family: "Geo", sans-serif;
+}
+
+.login-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Geo", sans-serif;
+}
+
+/* Media Queries para responsividade se necessário, mas o grid já ajuda bastante */
+@media (max-width: 768px) {
+    .register-form {
+        grid-template-columns: 1fr; /* Em telas menores, o formulário vira uma coluna */
+    }
+    .form-actions {
+        grid-column: 1; /* Move para a primeira coluna em telas menores */
+        grid-row: auto; /* Deixa o fluxo normal */
+        align-items: center; /* Centraliza o botão e o link */
+        padding-left: 0;
+    }
+    .register-container {
+        padding: 20px;
+    }
+    .title {
+        padding: 0 20px;
+    }
+}
