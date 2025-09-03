@@ -1,44 +1,77 @@
-<!-- 
-  PÁGINA DE EDIÇÃO DE PERFIL (perfil.html)
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória - Perfil</title>
 
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 
-      Cabeçalho com:
-      - Nome do jogador
-      - Botão para voltar ao jogo
-      - Botão de logout
-    -->
+  <header class="title">
+    <h1>
+        <img src="../img/head-logo.svg" alt="head-logo" class="img01">
+        MEMÓRIA
+        <img src="../img/head-logo.svg" alt="head-logo" class="img02">
+    </h1>
     
-    <!-- 
-      Formulário de edição de perfil:
-      - Campo para nome completo (editável)
-      - Campo para data de nascimento (não editável, apenas exibição)
-      - Campo para CPF (não editável, apenas exibição)
-      - Campo para telefone (editável)
-      - Campo para e-mail (editável)
-      - Campo para nome de usuário (não editável, apenas exibição)
-      - Campo para nova senha (opcional)
-      - Campo para confirmar nova senha (opcional)
-      - Botão de salvar alterações
-    -->
+    <a href="index.html" class="btn-sair">
+        <img src="../img/logout.svg" alt="Sair"> Sair
+    </a>
+</header>
+
+    <nav class="painel">
+        <a href="profile.html" class="active"><img src="../img/person-circle.svg" class="painel-icon" alt="profile">Perfil</a>
+        <a href="history.html"><img src="../img/Subtract.svg" class="painel-icon" alt="history">Histórico</a>
+        <a href="rank.html"><img src="../img/trophy-fill.svg" class="painel-icon" alt="raking">Ranking</a>
+    </nav>
+
+    <main class="profile-container">
+        <h2>DADOS PESSOAIS</h2>
+        <form class="profile-form">
+            <div class="form-field">
+                <label for="fullName">*Nome completo:</label>
+                <div class="data-display">Lorem ipsum dolor</div>
+            </div>
+            <div class="form-field">
+                <label for="email">*E-mail</label>
+                <div class="data-display">Loremipsum@dominio.com</div>
+            </div>
+            <div class="form-field">
+                <label for="emailConfirm">*Confirmação de e-mail</label>
+                <div class="data-display">Loremipsum@dominio.com</div>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">*Telefone</label>
+                <div class="data-display">(ddd) 91111-1111</div>
+            </div>
+            <div class="form-field">
+                <label for="password">*Senha</label>
+                <div class="data-display">**********</div>
+            </div>
+            <div class="form-field">
+                <label for="passwordConfirm">*Confirmação de senha</label>
+                <div class="data-display">**********</div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-update">
+                    Atualizar Dados
+                    <img src="../img/submit.svg" alt="Confirmar">
+                </button>
+                <button type="button" class="btn-cancel">
+                    Cancelar Ação
+                    <img src="../img/head-logo.svg" alt="Cancelar">
+                </button>
+            </div>
+        </form>
+    </main>
     
-    <!-- 
-      Rodapé com informações de copyright e link para validação W3C
-    -->
-</body>
+    </body>
 </html>
