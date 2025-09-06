@@ -1,188 +1,122 @@
 
-/*sempre trabalhar definindo as variáveis de cores aqui*/
-
-body.index {
+body#index{
+  background: linear-gradient(180deg, var(--color-background-lighter) 0%, var(--color-background-darker) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(180deg, var(--color-background-lighter) 0%, var(--color-background-darker) 100%);
-  margin: 0;
-}
-h1{
-  color: var(--color-text-general);
   text-align: center;
-  font-size: 52px;
-  display: flex;             /* Coloca texto e imagens na mesma linha */
-  align-items: center;       /* Centraliza verticalmente */
-  justify-content: center;   /* Centraliza horizontalmente */
-  gap: 10px;                 /* Espaço entre as imagens e o texto */
-  margin: 20px 0;
+
+  overflow: hidden;
+  
 }
-.img01,.img02{
-  width: 60px;
+
+div.logo{
+  padding-top:23px;
+}
+.head-logo{
+  width: 70px;
   height: auto;
-  position: relative;
-}
-.img01{
-  transform: scaleX(-1);
-  top:10px;
-
-}
-.img02{
-  top:10px;
+  transform: translateY(18px);
 }
 
-/*
- * Estilos para containers principais:
- * - Container da página de login
- * - Container da página de cadastro
- * - Container da página do jogo
- */
-.Formulario h2{
+.head-logo.left {
+ transform: scaleX(-1) translateY(18px);
+
+}
+#memoria-text{
+  display: inline;
   color: var(--color-text-general);
-  font-size: 40px;
-  text-align: center;
+  font-size: 6em;   
+  padding: 0 32px 0 32px;              
 
 }
-.Formulario {
+#Formulario {
   display: flex;
   flex-direction: column;
+  background-color: var( --color-background-forms);
   gap: 15px;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: auto;
+  height: 100%;
+  width: 570px;
 
 }
 
-.Formulario form {
+#Formulario h2{
+  color: var(--color-text-general);
+  font-size: 40px;
+  font-weight: 100;
+  margin: 40px 0 20px 0;
+
+}
+
+#Formulario form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-.Formulario input{
-  border-radius: 24px;
+
+#Formulario input{
+  border-radius: 12px;
   color: var(--color-text-general);
   border: none;
-  width: 200px;
-  height: 30px;
+  width:300px;
+  height: 50px;
   background: #2f5a50;
   text-align: center;
 }
-.Formulario input::placeholder{
+
+#Formulario input::placeholder{
   color: var(--color-label-text);
   text-align: center;
-  opacity: 1;
-}
-.Formulario a{
-  color: var(--color-label-text);
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
+  font: italic 400 20px "Quantico", sans-serif;
+  line-height: normal;
 }
 
-.Formulario a:hover{
+#Formulario #user{
+  margin-bottom: 20px;
+}
+
+#Formulario #password{
+  margin-bottom: 7px;
+}
+
+#Formulario #botao-criar-conta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-button);
+  color: var(--color-text-general);
+
+  font: normal 700 14px "Quantico", sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+  width: 160px;
+  height: 30px;
+  border-radius: 13px;
+}
+
+#Formulario #botao-criar-conta:hover{
   color: var(--color-text-hover);
   transition: 400ms;
   cursor: pointer;
 }
-.Formulario button {
-  border-radius: 24px;
-  border: none;
-  background: transparent;
-  color: transparent;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
 
-.Formulario img{
-  width: 50px;
-}
-.Formulario label {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+img#botao-entrar{
+  width: 65px;
+  transform: translateY(25px)
 }
 
 
-/*
- * Estilos para formulários:
- * - Campos de input
- * - Labels
- * - Botões
- * - Mensagens de erro (para implementação futura)
- */
-
-/*
- * Estilos para o cabeçalho:
- * - Menu de navegação
- * - Logo (se houver)
- */
-
-/*Estilos Elementos Rodapés*/
-footer{
+#footer{
   color: var(--color-text-general);
   text-align: center;
-  font-size: 10px;
-  padding: 10px 0;
+  font-size: 18px;
+  margin: auto 0 20px;
 
 }
-/*
- * Estilos para o painel de controle do jogo:
- * - Dropdowns de seleção
- * - Botões de ação
- */
 
-/*
- * Estilos para o tabuleiro do jogo:
- * - Grid responsivo
- * - Cartas/peças do jogo (frente e verso)
- * - Animações para virar cartas
- */
 
-/*
- * Estilos para o painel de informações:
- * - Contadores
- * - Temporizador
- */
-
-/*
- * Estilos para a tabela de histórico:
- * - Linhas zebradas
- * - Destaque para vitórias/derrotas
- */
-
-/*
- * Estilos para o modal de fim de jogo:
- * - Overlay
- * - Caixa de diálogo
- * - Botões de ação
- */
-
-/*
- * Estilos para a tabela de ranking:
- * - Destaque para os três primeiros colocados
- */
-
-/*
- * Media queries para responsividade:
- * - Breakpoints para mobile
- * - Breakpoints para tablet
- */
-
-/*
- * Animações e transições:
- * - Para as cartas do jogo
- * - Para feedback de interações
- */
-
-/*
- * Estados de elementos:
- * - Hover em botões
- * - Focus em inputs
- * - Active states
- */

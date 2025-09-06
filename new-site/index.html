@@ -9,64 +9,47 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <title>Memória-Login</title>
 
 </head>
-<body class="index">
+<body id="index">
 
-  <header>
-    <!--Fazer um menu pra poder acessar o ranking e o jogo-->
-  </header>
-    <!--
-      Container principal da página de login
-    -->
-      <!--To só ajeitando a organização de containers-->
-      <div class="title"> 
-            <h1>
-              <img src="img/head-logo.svg" alt="head-logo" class="img01">
-              Memória
-              <img src="img/head-logo.svg" alt="head-logo" class="img02">
-              </h1>
+    <div id="Formulario">
+      <div class="logo"> 
+        <img src="img/head-logo.svg" alt="logo" class="head-logo left">
+        <h1 id="memoria-text">MEMÓRIA</h1>
+        <img src="img/head-logo.svg" alt="logo" class="head-logo right">
       </div>
 
-    <!--
-      Formulário de login:
-      - Campo para nome de usuário
-      - Campo para senha (type password)
-      - Botão de enviar
-      - Link para página de cadastro
-    -->
-    <div class="Formulario">
-      <h2>Login</h2>
+      <h2>LOGIN</h2>
+
       <form>
-        <label for="email">Email</label>
+        
         <input
-            placeholder="Digite seu Email"
+            placeholder="Usuário"
             required
-            id="email"
+            id="user"
             type="email"
-            name="email"
+            name="user"
             size="20"
           >
-        <label for="password">Senha</label>
+        
         <input
           placeholder="Senha"
           type="password"
           id="password"
           required>
 
-        <p><a href="./pages/register.html"><i>Criar Conta</i></a></p>
-        <button>
-          <img src="img/submit.svg" alt="submit">
-        </button>
+        <a href="./pages/register.html" id="botao-criar-conta">Criar Conta</a>
+
+        <a href="./pages/hub_partida.html"><img src="img/submit.svg" alt="submit" id="botao-entrar"></a>
+          
       </form>
+      <p id="footer">Todos os Direitos Reservados</p>
     </div>
 
-<footer>
-  <p>Todos os Direitos Reservados</p>
-</footer>
 </body>
 
 </html>
