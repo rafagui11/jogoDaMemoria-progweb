@@ -1,4 +1,4 @@
-Tutorial básico de git: https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link
+Tutorial básico de git: [https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link](https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link)
 
 
 ### 1. Configuração inicial (uma vez só)
