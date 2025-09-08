@@ -1,53 +1,60 @@
-<!-- 
-  PÁGINA DE RANKING (ranking.html)
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memória - Histórico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/history.css" />
 
-    <link rel="stylesheet" href="css/rank.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="logo">
+        <h1>
+          <img src="../img/head-logo.svg" alt="head-logo" class="img01" />
+          MEMÓRIA
+          <img src="../img/head-logo.svg" alt="head-logo" class="img02" />
+        </h1>
+        <a href="../index.html" class="btn-sair">
+          <img src="../img/logout.svg" alt="Sair" /> Sair
+        </a>
+      </div>
+    </div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- 
-      Cabeçalho com:
-      - Título da página (Ranking)
-      - Botão para voltar ao jogo
-      - Botão de logout
-    -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="jogo.html">Jogo</a></li>
-          <li><a href="rank.html">Ranking</a></li>
-          <li><a href="perfil.html">Perfil</a></li>
-          <li><a href="index.html">Sair</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="menu">
+      <div class="container">
+        <nav>
+          <a href="hub_partida.html">
+            <img src="../img/play-fill.svg" class="menu-icon" alt="raking" />
+            <p>Jogar</p>
+          </a>
+          <a href="profile.html">
+            <img src="../img/person-circle.svg" class="menu-icon" alt="logo" />
+            <p>Perfil</p>
+          </a>
 
-    <!-- 
-      Tabela de ranking:
-      - Colunas: Posição, Nome, Tabuleiro, Jogadas, Tempo, Data
-      - Conteúdo estático para esta parcial (dados fictícios)
-    -->
-    
-    <!-- 
-      Filtros para o ranking (para implementação futura):
-      - Filtro por tamanho do tabuleiro
-      - Filtro por modo de jogo
-    -->
-    
-    <!-- 
-      Rodapé com informações de copyright e link para validação W3C
-    -->
-</body>
+          <a href="history.html">
+            <img src="../img/Subtract.svg" class="menu-icon" alt="history" />
+            <p>Histórico</p>
+          </a>
+
+          <a href="rank.html" class="active">
+            <img src="../img/trophy-fill.svg" class="menu-icon" alt="raking" />
+            <p>Ranking</p>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <main></main>
+    </div>
+  </body>
 </html>

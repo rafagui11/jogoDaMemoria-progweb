@@ -4,10 +4,15 @@
     --color-background-lighter: #275950;
     --color-background-darker: #1E1E1E;
     --color-background-forms: #17B498;
+    --color-background-general: #ffffff;
     --color-button: #FF8818;
+    --color-button-secondary: #949494;
     --color-label-text: #d1d6ce; 
+    --color-nav: #012626;
     --color-text-general: #ffffff;
+    --color-text-general-dark: #000000;
     --color-text-hover: #ffffff;
+    --color-field-input: #0C6767;
     font-size: 60%; 
 }
 
@@ -22,5 +27,131 @@ html, body{
 }
 
 body{
+    background: linear-gradient(180deg, var(--color-background-lighter) 0%, var(--color-background-darker) 100%);
     font-family: "Quantico", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-general);
+}
+
+/*Painel*/
+#menu {
+  width: 100%;
+  text-align: center;
+  background: var(--color-nav);
+  display: flex;
+}
+
+#menu nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  padding: 10px 0 10px 0;
+}
+
+/* Links do Painel: Perfil, Histórico, Ranking */
+#menu a {
+  flex: 1;
+  color: var(--color-text-general-dark);
+  background-color: var(--color-background-general);
+  height: 45px; 
+  border-radius: 18px;
+  font: normal 18px "Quantico", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu a:hover,
+#menu a.active{
+  background-color: var(--color-button);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+/* Ícones do Painel (NOVO) - regra unificada */
+.menu-icon {
+  width: 22px;
+  display: inline;
+  position: relative;
+  top: 38%;
+  transform: translateY(-76%);
+  margin-right: 10px;
+}
+
+.menu-icon,
+p {
+  display: inline;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+}
+
+#logo,
+#menu,
+main {
+  margin: 0;
+}
+
+main {
+  justify-items: center;
+  align-items: center;
+}
+
+/* Cabeçalho e logo */
+
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#logo h1 {
+  color: var(--color-text-general);
+  font-size: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.img01,
+.img02 {
+  width: 52px;
+  height: auto;
+  position: relative;
+}
+
+.img01 {
+  transform: scaleX(-1);
+}
+
+.btn-sair {
+  background-color: var(--color-background-general);
+  color: var(--color-text-general-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  width: 80px;
+  height: 35px;
+  border-radius: 16px;
+
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-sair img {
+  width: 16px;
+  height: 16px;
 }

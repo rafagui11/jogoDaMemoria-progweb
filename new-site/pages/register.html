@@ -1,82 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/register.css">
-    <link rel="stylesheet" href="../css/main.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Memória - Cadastro</title>
-</head>
+      <link rel="stylesheet" href="../css/register.css" />
+      <link rel="stylesheet" href="../css/main.css" />
 
-</head>
-<body>
-  <header class="title register-header"> <h1>MEMÓRIA</h1>
-    <a href="index.html" class="btn-sair">
-        <img src="../img/logout.svg" alt="Sair"> Sair
-    </a>
-</header>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      />
+      <title>Memória - Cadastro</title>
+    </head>
+  </head>
 
-<main class="register-container">
-  <h2>CADASTRO</h2>
+  <body>
+    <div class="container">
+      <div id="logo">
+        <h1>
+          <img src="../img/head-logo.svg" alt="head-logo" class="img01" />
+          MEMÓRIA
+          <img src="../img/head-logo.svg" alt="head-logo" class="img02" />
+        </h1>
+        <a href="../index.html" class="btn-sair">
+          <img src="../img/logout.svg" alt="Sair" /> Sair
+        </a>
+      </div>
+    </div>
 
-  <form class="register-form">
-      <div class="form-field">
-          <label for="fullName">*Nome completo</label>
-          <input type="text" id="fullName" name="fullName" required>
-      </div>
-      <div class="form-field">
-          <label for="cpf">*CPF</label>
-          <input type="text" id="cpf" name="cpf" required>
-      </div>
-      <div class="form-field">
-          <label for="email">*E-mail</label>
-          <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-field">
-          <label for="emailConfirm">*Confirmação de e-mail</label>
-          <input type="email" id="emailConfirm" name="emailConfirm" required>
-      </div>
-      <div class="form-field">
-          <label for="password">*Senha</label>
-          <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-field">
-          <label for="passwordConfirm">*Confirmação de senha</label>
-          <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-      </div>
+    <div class="container">
+      <main class="register-container">
+        <h2>CADASTRO</h2>
 
-      <div class="form-field">
-          <label for="birthDate">*Data de Nascimento</label>
-          <input type="date" id="birthDate" name="birthDate" required>
-      </div>
-      <div class="form-field">
-          <label for="phone">*Telefone</label>
-          <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-field">
-          <label for="username">*Nome de usuário</label>
-          <input type="text" id="username" name="username" required>
-      </div>
-      
-      <div class="form-actions">
-          <button type="submit" class="submit-btn">
+        <form class="register-form">
+          <div class="form-field">
+            <label for="fullName">*Nome completo</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+          <div class="form-field">
+            <label for="cpf">*CPF</label>
+            <input type="text" id="cpf" name="cpf" required />
+          </div>
+          <div class="form-field">
+            <label for="email">*E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="emailConfirm">*Confirmação de e-mail</label>
+            <input
+              type="email"
+              id="emailConfirm"
+              name="emailConfirm"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="password">*Senha</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-field">
+            <label for="passwordConfirm">*Confirmação de senha</label>
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="birthDate">*Data de Nascimento</label>
+            <input type="date" id="birthDate" name="birthDate" required />
+          </div>
+          <div class="form-field">
+            <label for="phone">*Telefone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-field">
+            <label for="username">*Nome de usuário</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">
               Criar conta
-              <img src="../img/submit.svg" alt="Ícone de confirmar">
-          </button>
-          <p class="login-link">
+              <img src="../img/submit.svg" alt="Ícone de confirmar" />
+            </button>
+            <p class="login-link">
               Já possui uma conta? <a href="index.html">Entrar</a>
-          </p>
-      </div>
-  </form>
-</main>
-
-
-    </body>
+            </p>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
