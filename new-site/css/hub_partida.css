@@ -48,45 +48,49 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 20px;
+  gap: 10%;
 }
 
 .modo-opcao {
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
+
   border-radius: 12px;
-  width: 180px;
-  height: 140px;
+  width: 320px;
+  height: 180px;
+  padding:100px;
+
   cursor: pointer;
   transition: background-color 0.3s;
-  box-sizing: border-box;
+
 }
 
 /* Estilo do modo selecionado usando o :checked */
 input[type="radio"]:checked + .modo-opcao {
-  background-color: #0c4b41;
+   background-color: var(--color-field-input);
 }
 
 .modo-opcao:hover {
-  background-color: #0c6758;
+  background-color: var(--color-field-input);
+
 }
 
 /* Títulos "Clássico" e "Contratempo" */
 .title01,
 .title02 {
   font-size: 28px;
-  color: white;
+  color: var(--color-text-general);
   margin: 0;
 }
 
 /* Ícones */
 .classic,
 .contratempo {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
@@ -94,16 +98,17 @@ input[type="radio"]:checked + .modo-opcao {
 .linha {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: var(--color-background-general);
   border-radius: 1px;
 }
 
 .subtitulo {
-  font-size: 20px;
+  font-size: 37px;
   font-weight: bold;
-  color: white;
-  margin: 0;
+  color: var(--color-text-general);
+  padding-right: 100px;
 }
+
 
 /* Container da parte inferior */
 .config {
@@ -119,8 +124,8 @@ input[type="radio"]:checked + .modo-opcao {
 }
 
 .tab-option {
-  font-size: 18px;
-  color: white;
+  font-size: 25px;
+  color: var(--color-text-general);
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 8px;
@@ -130,16 +135,16 @@ input[type="radio"]:checked + .modo-opcao {
 
 /* Estilo da opção de tabuleiro selecionada usando o :checked */
 input[type="radio"]:checked + .tab-option {
-  background-color: #0c4b41;
+   background-color: var(--color-field-input);
 }
 
 .tab-option:hover {
-  background-color: #0c6758;
+   background-color: var(--color-field-input);
 }
 
 .iniciar {
   background-color: var(--color-button);
-  color: white;
+  color: var(--color-text-general);
   font-weight: bold;
   text-decoration: none;
   padding: 10px 30px;
