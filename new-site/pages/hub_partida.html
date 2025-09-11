@@ -31,7 +31,7 @@
     <div id="menu">
       <div class="container">
         <nav>
-            <a href="hub_partida.html" class="active">
+          <a href="hub_partida.html" class="active">
             <img src="../img/play-fill.svg" class="menu-icon" alt="raking" />
             <p>Jogar</p>
           </a>
@@ -56,7 +56,7 @@
     <div class="container">
       <main>
         <h2 class="title-hub">CONFIGURAÇÕES DA PARTIDA</h2>
-        <div class="retangulo">
+        <div id="background-hub">
           <div class="options">
             <input type="radio" name="modo" id="classico" checked />
             <label for="classico" class="modo-opcao">
@@ -81,10 +81,9 @@
 
           <div class="linha"></div>
 
-          <div id="tabuleiro">
-            <h3 class="subtitulo">Tipo de tabuleiro</h3>
-
-            <div class="config">
+          <div id="config">
+            <div class="config-left">
+              <span class="subtitulo">Tipo de tabuleiro</span>
               <div class="tab-options">
                 <input type="radio" name="tabuleiro" id="2x2" />
                 <label for="2x2" class="tab-option">2x2</label>
@@ -98,10 +97,13 @@
                 <input type="radio" name="tabuleiro" id="8x8" checked />
                 <label for="8x8" class="tab-option">8x8</label>
               </div>
-              <a class="iniciar" href="#">INICIAR</a>
             </div>
+
+            <div class="config-right">
+               <a class="iniciar" href="#">INICIAR</a>
+            </div>
+
           </div>
-          
         </div>
       </main>
     </div>

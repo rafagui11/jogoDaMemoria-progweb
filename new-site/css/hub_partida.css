@@ -16,20 +16,21 @@ input[type="radio"] {
 }
 
 .title-hub {
-  font-size: 42px;
+  font-size: 2.625rem;
   text-align: center;
-  margin: 35px 0 15px 0;
+  margin: 2.18rem 0 1rem 0;
   color: var(--color-background-general);
 }
 
 /* Contêiner do retângulo verde */
-.retangulo {
+#background-hub {
+
   background: var(--color-background-forms);
   box-sizing: border-box;
-  border-radius: 24px;
+   border-radius: 1.5rem;
 
-  width: 100%;
-  height: 400px;
+  width: 65.8rem;
+  min-height: 65vh;
 
   display: flex;
   flex-direction: column;
@@ -37,9 +38,9 @@ input[type="radio"] {
   justify-content: space-around;
   align-items: center;
 
-  padding: 20px 50px;
+  padding: 1.25rem 3.125rem;
 
-  margin-bottom: 30px;
+ margin-bottom: 2rem;
 }
 
 /* Seção dos modos de jogo */
@@ -48,108 +49,129 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 10%;
+  gap: 5vw;
 }
 
 .modo-opcao {
-
   display: flex;
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
 
-  border-radius: 12px;
-  width: 320px;
-  height: 180px;
-  padding:100px;
+  border-radius: 0.75rem;
+  width: 20rem;
+  min-height: 11.25rem;
+  padding: 1rem;
 
   cursor: pointer;
   transition: background-color 0.3s;
-
 }
 
 /* Estilo do modo selecionado usando o :checked */
 input[type="radio"]:checked + .modo-opcao {
-   background-color: var(--color-field-input);
+  background-color: var(--color-field-input);
 }
 
 .modo-opcao:hover {
   background-color: var(--color-field-input);
-
 }
 
 /* Títulos "Clássico" e "Contratempo" */
 .title01,
 .title02 {
-  font-size: 28px;
+  font-size: 1.75rem; 
   color: var(--color-text-general);
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 /* Ícones */
 .classic,
 .contratempo {
-  width: 120px;
+  width: 7.5rem;
   height: auto;
 }
 
 /* Linha divisória */
 .linha {
   width: 100%;
-  height: 2px;
+  height: 0.125rem; 
   background-color: var(--color-background-general);
-  border-radius: 1px;
+  border-radius: 0.06rem;
 }
 
 .subtitulo {
-  font-size: 37px;
+  font-size: 2.3rem; 
   font-weight: bold;
   color: var(--color-text-general);
-  padding-right: 100px;
+  margin: 0 0 1rem 0;
 }
 
-
-/* Container da parte inferior */
-.config {
+#config {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
+.config-left {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  margin-left:100px;
+}
+
+.config-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right:100px;
+
+}
+
 .tab-options {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .tab-option {
-  font-size: 25px;
+  font-size: 1.56rem;
   color: var(--color-text-general);
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
+   width: 5rem;
+  height: 2.2rem;
+  border-radius: 1.5rem; 
   transition: background-color 0.3s;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilo da opção de tabuleiro selecionada usando o :checked */
 input[type="radio"]:checked + .tab-option {
-   background-color: var(--color-field-input);
+  background-color: var(--color-field-input);
 }
 
 .tab-option:hover {
-   background-color: var(--color-field-input);
+  background-color: var(--color-field-input);
 }
 
 .iniciar {
+  font-size: 1.7rem;
   background-color: var(--color-button);
   color: var(--color-text-general);
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 20px;
+  width: 10.3rem;
+  height: 3.75rem;
+  border-radius: 1.625rem; 
   transition: background-color 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iniciar:hover {
