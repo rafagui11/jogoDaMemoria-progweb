@@ -91,6 +91,9 @@ input[type="radio"]:checked + .modo-opcao {
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+  gap: 7rem;
+
+  
 }
 
 .config-left {
@@ -151,6 +154,9 @@ input[type="radio"]:checked + .tab-option {
   display: flex;
   justify-content: center;
   align-items: center;
+
+    box-shadow: 0.2rem 0.2rem black;
+
 }
 
 .iniciar:hover {

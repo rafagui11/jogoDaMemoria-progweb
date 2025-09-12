@@ -47,6 +47,9 @@
 
     width: 15rem;
     height: auto;
+
+    box-shadow: 0.2rem 0.2rem black;
+
 }
 
 .btn-update img, .btn-cancel img {

@@ -4,7 +4,6 @@ html, body {
   padding: 0;
 }
 
-
 .head-logo{
   width: 4.375rem;
   height: auto;
@@ -31,7 +30,6 @@ html, body {
   min-height: 100vh;
   padding: 0 10px 0 10px;
 
-  /* Adicione esta linha para centralizar o conteúdo verticalmente */
   justify-content: center; 
 
 }
@@ -97,6 +95,9 @@ html, body {
   width: 15rem;
   height: 2.7rem;
   border-radius: 1.6rem; 
+
+  box-shadow: 0.2rem 0.2rem black;
+
 }
 
 #Formulario #botao-criar-conta:hover{
