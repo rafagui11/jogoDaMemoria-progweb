@@ -1,90 +1,73 @@
 
-/* Container principal do perfil */
 .profile-container {
     width: 100%;
     background-color: var(--color-background-forms);
-    border-radius: 24px;
-    padding: 30px 50px;
-    margin-top: 30px;
-    box-sizing: border-box;
+    border-radius: 1.5rem;
+    padding: 4rem 0;
+    margin: 4rem auto;
 }
 
-/* Título "DADOS PESSOAIS" */
 .profile-container h2 {
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 15.25rem 1.875rem 0;
+    font: 300 normal 3.5rem "Quantico", sans-serif;
+    
 }
 
-/* Layout em grid para o formulário */
 .profile-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 40px;
-}
-
-/* Estilo para cada campo (label + div de dados) */
-.form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+    gap: 1.25rem 2.5rem;
+} 
 
 .form-field label {
-    font-size: 16px;
+    font: italic 0.875rem "Quantico", sans-serif;
 }
 
-/* Div que simula o campo de input com dados */
-.data-display {
+.form-field input {
     background-color: var(--color-field-input);
+    border-radius: 1.25rem;
+    height: 2.25rem;
+    padding: 0 1.25rem;
+    font: italic 0.813rem "Quantico", sans-serif;
     border: none;
-    border-radius: 20px;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 
-/* Container para os botões de ação */
-.form-actions {
-    grid-column: 1 / -1; /* Ocupa as duas colunas */
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+.form-field input::placeholder{
+    color: var(--color-text-general);
 }
 
-/* Botão genérico */
+#form-actions {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 1.25rem;
+    gap: 0.938rem; 
+}
+
 .btn-update, .btn-cancel {
     border: none;
-    border-radius: 25px;
-
+    border-radius: 1.563rem;
     color: var(--color-text-general);
-    
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 0.75rem 1.563rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
+    font-weight: 700;
 }
 
 .btn-update img, .btn-cancel img {
-    width: 18px;
+    width: 1.125rem;
 }
 
 
-/* Botão Laranja "Atualizar Dados" */
 .btn-update {
-    background-color: var( --color-button);
+    background-color: var(--color-button);
+    width: 13rem;
 }
 
-/* Botão Cinza "Cancelar Ação" */
+
 .btn-cancel {
-    background-color: var( --color-button-secondary);
+    background-color: var(--color-button-secondary);
+    width: 13rem;
 }

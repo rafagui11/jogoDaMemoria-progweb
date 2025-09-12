@@ -60,40 +60,39 @@
         <form class="profile-form">
           <div class="form-field">
             <label for="fullName">*Nome completo:</label>
-            <div class="data-display">Lorem ipsum dolor</div>
-          </div>
-          <div class="form-field">
-            <label for="email">*E-mail</label>
-            <div class="data-display">Loremipsum@dominio.com</div>
-          </div>
-          <div class="form-field">
-            <label for="emailConfirm">*Confirmação de e-mail</label>
-            <div class="data-display">Loremipsum@dominio.com</div>
+            <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" required>
           </div>
 
           <div class="form-field">
             <label for="phone">*Telefone</label>
-            <div class="data-display">(ddd) 91111-1111</div>
+            <input type="tel" id="phone" name="phone" placeholder="(DDD) 90000-0000" required>
+          </div>
+          <div class="form-field">
+            <label for="email">*E-mail</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+          </div>
+          <div class="form-field">
+            <label for="emailConfirm">*Confirmação de e-mail</label>
+            <input type="email" id="emailConfirm" name="emailConfirm" placeholder="Confirme seu e-mail" required>
           </div>
           <div class="form-field">
             <label for="password">*Senha</label>
-            <div class="data-display">**********</div>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
           </div>
           <div class="form-field">
             <label for="passwordConfirm">*Confirmação de senha</label>
-            <div class="data-display">**********</div>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirme sua senha" required>
           </div>
-
-          <div class="form-actions">
+          <div id="form-actions">
             <button type="submit" class="btn-update">
               Atualizar Dados
-              <img src="../img/submit.svg" alt="Confirmar" />
+              <img src="../img/check-lg.svg" alt="Confirmar" />
             </button>
             <button type="button" class="btn-cancel">
               Cancelar Ação
-              <img src="../img/head-logo.svg" alt="Cancelar" />
+              <img src="../img/x-lg.svg" alt="Cancelar" />
             </button>
-          </div>
+          </div> 
         </form>
       </main>
     </div>
