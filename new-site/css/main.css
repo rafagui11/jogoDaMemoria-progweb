@@ -34,7 +34,7 @@ body{
     
 }
 
-/*Painel*/
+/*menu*/
 #menu {
   width: 100%;
   background: var(--color-nav);
@@ -52,7 +52,7 @@ body{
   padding: 0.625rem 0 0.625rem 0;
 }
 
-/* Links do Painel: Perfil, Histórico, Ranking */
+
 #menu a {
   flex: 1;
   color: var(--color-text-general-dark);
@@ -73,7 +73,6 @@ body{
   cursor: pointer;
 }
 
-/* Ícones do Painel (NOVO) - regra unificada */
 .menu-icon {
   width: 1.375rem;
   height: auto;
@@ -102,8 +101,6 @@ main {
   justify-items: center;
   align-items: center;
 }
-
-/* Cabeçalho e logo */
 
 #logo {
   display: flex;
@@ -152,10 +149,21 @@ main {
   height: 1rem;
 }
 
-
+/*titulo da página*/
 .title-hub {
   font-size: 2.625rem;
   text-align: center;
   margin: 2.18rem 0 1rem 0;
   color: var(--color-background-general);
 }
+
+/*containers em comum*/
+
+.main-container{
+    width: 100%;
+    min-height: 65vh;
+    background-color: var(--color-background-forms);
+    border-radius: 1.8rem;
+    padding: 4rem 5rem;
+}
+

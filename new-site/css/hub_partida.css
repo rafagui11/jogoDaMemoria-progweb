@@ -6,14 +6,7 @@ input[type="radio"] {
 
 
 /* Contêiner do retângulo verde */
-#background-hub {
-
-  background: var(--color-background-forms);
-  box-sizing: border-box;
-   border-radius: 1.5rem;
-
-  width: 65.8rem;
-  min-height: 65vh;
+#content-hub {
 
   display: flex;
   flex-direction: column;
@@ -23,7 +16,8 @@ input[type="radio"] {
 
   padding: 1.25rem 3.125rem;
 
- margin-bottom: 2rem;
+  margin-bottom: 2rem;
+
 }
 
 /* Seção dos modos de jogo */
@@ -33,6 +27,7 @@ input[type="radio"] {
   align-items: center;
   width: 100%;
   gap: 5vw;
+  margin-bottom: 2rem;
 }
 
 .modo-opcao {
@@ -95,6 +90,7 @@ input[type="radio"]:checked + .modo-opcao {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .config-left {

@@ -1,26 +1,13 @@
 
-.profile-container {
-    width: 100%;
-    min-height: 65vh;
-    background-color: var(--color-background-forms);
-    border-radius: 1.8rem;
-    padding: 4rem 0;
-}
-
-.profile-container h2 {
-    margin: 0 15.25rem 1.875rem 0;
-    font: 300 normal 3.5rem "Quantico", sans-serif;
-    
-}
-
 .profile-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem 2.5rem;
+    margin-top: 1.8rem;
 } 
 
 .form-field label {
-    font: italic 0.875rem "Quantico", sans-serif;
+    font: italic 1.4rem "Quantico", sans-serif;
 }
 
 .form-field input {
@@ -29,7 +16,7 @@
     border-radius: 1.25rem;
     height: 2.25rem;
     padding: 0 1.25rem;
-    font: italic 0.813rem "Quantico", sans-serif;
+    font: italic 1rem "Quantico", sans-serif;
     border: none;
     width: 100%;
 }
@@ -49,13 +36,17 @@
 .btn-update, .btn-cancel {
     border: none;
     border-radius: 1.563rem;
-    color: var(--color-text-general);
     padding: 0.75rem 1.563rem;
-    font-size: 1rem;
     cursor: pointer;
     display: flex;
     gap: 0.625rem;
+    
     font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-text-general);
+
+    width: 15rem;
+    height: auto;
 }
 
 .btn-update img, .btn-cancel img {
@@ -65,11 +56,9 @@
 
 .btn-update {
     background-color: var(--color-button);
-    width: 13rem;
 }
-
 
 .btn-cancel {
     background-color: var(--color-button-secondary);
-    width: 13rem;
+
 }
