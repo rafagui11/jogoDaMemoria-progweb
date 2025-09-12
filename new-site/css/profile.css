@@ -2,9 +2,9 @@
 .profile-container {
     width: 100%;
     background-color: var(--color-background-forms);
-    border-radius: 1.5rem;
+    border-radius: 1.8rem;
     padding: 4rem 0;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .profile-container h2 {
