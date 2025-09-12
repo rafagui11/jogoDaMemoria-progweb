@@ -4,7 +4,7 @@
     background-color: var(--color-background-forms);
     border-radius: 1.5rem;
     padding: 4rem 0;
-    margin: 4rem auto;
+    margin-top: 7rem;
 }
 
 .profile-container h2 {
@@ -24,6 +24,7 @@
 }
 
 .form-field input {
+    color: var(--color-text-input);
     background-color: var(--color-field-input);
     border-radius: 1.25rem;
     height: 2.25rem;
@@ -35,6 +36,7 @@
 
 .form-field input::placeholder{
     color: var(--color-text-general);
+    opacity: 0.7;
 }
 
 #form-actions {
