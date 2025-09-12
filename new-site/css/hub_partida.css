@@ -1,26 +1,9 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font: normal 20px "Quantico", sans-serif;
-  align-items: center;
-  background: linear-gradient(
-    180deg,
-    var(--color-background-lighter) 0%,
-    var(--color-background-darker) 100%
-  );
-}
 
 input[type="radio"] {
   display: none;
 }
 
-.title-hub {
-  font-size: 2.625rem;
-  text-align: center;
-  margin: 2.18rem 0 1rem 0;
-  color: var(--color-background-general);
-}
+
 
 /* Contêiner do retângulo verde */
 #background-hub {

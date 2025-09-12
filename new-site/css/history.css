@@ -1,9 +1,9 @@
 .history-container {
     width: 100%;
+    min-height: 65vh;
     background-color: var(--color-background-forms);
     border-radius: 1.8rem;
     padding: 2rem 2rem;
-    margin-top: 2rem;
 }
 
 .tabs {
