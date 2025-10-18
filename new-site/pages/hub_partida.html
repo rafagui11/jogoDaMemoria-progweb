@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/hub_partida.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,21 +31,19 @@
       <div class="container">
         <nav>
           <a href="hub_partida.html" class="active">
-            <img src="../img/play-fill.svg" class="menu-icon" alt="raking" />
+            <img src="../img/play-fill.svg" class="menu-icon" alt="jogar" />
             <p>Jogar</p>
           </a>
           <a href="profile.html">
-            <img src="../img/person-circle.svg" class="menu-icon" alt="logo" />
+            <img src="../img/person-circle.svg" class="menu-icon" alt="perfil" />
             <p>Perfil</p>
           </a>
-
           <a href="history.html">
-            <img src="../img/Subtract.svg" class="menu-icon" alt="history" />
+            <img src="../img/Subtract.svg" class="menu-icon" alt="historico" />
             <p>Histórico</p>
           </a>
-
           <a href="rank.html">
-            <img src="../img/trophy-fill.svg" class="menu-icon" alt="raking" />
+            <img src="../img/trophy-fill.svg" class="menu-icon" alt="ranking" />
             <p>Ranking</p>
           </a>
         </nav>
@@ -54,28 +51,20 @@
     </div>
 
     <div class="container">
-        <h2 class="title-hub">CONFIGURAÇÕES DA PARTIDA</h2>
+      <h2 class="title-hub">CONFIGURAÇÕES DA PARTIDA</h2>
       <main class="main-container">
         <div id="content-hub">
           <div class="options">
-            <input type="radio" name="modo" id="classico" checked />
+            <input type="radio" name="modo" id="classico" value="classica" checked />
             <label for="classico" class="modo-opcao">
               <p class="title01">Clássico</p>
-              <img
-                class="classic"
-                src="../img/classic_game.svg"
-                alt="classico"
-              />
+              <img class="classic" src="../img/classic_game.svg" alt="classico" />
             </label>
 
-            <input type="radio" name="modo" id="contratempo" />
+            <input type="radio" name="modo" id="contratempo" value="contra" />
             <label for="contratempo" class="modo-opcao">
               <p class="title02">Contratempo</p>
-              <img
-                class="contratempo"
-                src="../img/clock-icon.svg"
-                alt="contratempo"
-              />
+              <img class="contratempo" src="../img/clock-icon.svg" alt="contratempo" />
             </label>
           </div>
 
@@ -100,13 +89,13 @@
             </div>
 
             <div class="config-right">
-               <a class="iniciar" href="game.html">INICIAR</a>
+               <button class="iniciar">INICIAR</button>
             </div>
-
           </div>
         </div>
       </main>
     </div>
+
     <script src="../js/app.js"></script>
   </body>
 </html>
