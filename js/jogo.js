@@ -260,7 +260,7 @@
     document.body.appendChild(modalOverlay);
 
     document.getElementById('jogarNovamente').addEventListener('click', () => window.location.reload());
-    document.getElementById('voltarConfig').addEventListener('click', () => window.location.href = '../pages/hub_partida.php');
+    document.getElementById('voltarConfig').addEventListener('click', () => window.location.href = '/pages/hub_partida.php');
   }
 
   function exibirDerrota(motivo='Derrota') {
@@ -296,7 +296,7 @@
     document.body.appendChild(modalOverlay);
 
     document.getElementById('tentarNovamente').addEventListener('click', () => window.location.reload());
-    document.getElementById('voltarConfig2').addEventListener('click', () => window.location.href = '../pages/hub_partida.php');
+    document.getElementById('voltarConfig2').addEventListener('click', () => window.location.href = '/pages/hub_partida.php');
   }
 
   /* Trapaça persistente: mostrar todas ocultas (mantém status real do jogo) */
@@ -357,7 +357,7 @@
     btnDesistir.addEventListener('click', () => {
       clearInterval(timerIntervalo);
       timerIntervalo = null;
-      window.location.href = '../pages/hub_partida.php';
+      window.location.href = '/pages/hub_partida.php';
     });
   }
 

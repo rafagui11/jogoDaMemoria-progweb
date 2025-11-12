@@ -1,3 +1,4 @@
+<?php require_once 'check.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>

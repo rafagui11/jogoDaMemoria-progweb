@@ -1,4 +1,4 @@
-
+<?php require_once 'check.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

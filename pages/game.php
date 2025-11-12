@@ -1,3 +1,4 @@
+<?php require_once 'check.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,7 +20,7 @@
           MEMÓRIA
           <img src="/img/head-logo.svg" alt="head-logo" class="img02" />
         </h1>
-        <a href="index.php" class="btn-sair">
+        <a href="/index.php" class="btn-sair">
           <img src="/img/logout.svg" alt="Sair" /> Sair
         </a>
         <button class="circle small">desistir da partida</button>
