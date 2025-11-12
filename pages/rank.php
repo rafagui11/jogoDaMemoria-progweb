@@ -18,12 +18,12 @@
     <div class="container">
       <div id="logo">
         <h1>
-          <img src="../img/head-logo.svg" alt="head-logo" class="img01" />
+          <img src="/img/head-logo.svg" alt="head-logo" class="img01" />
           MEMÓRIA
-          <img src="../img/head-logo.svg" alt="head-logo" class="img02" />
+          <img src="/img/head-logo.svg" alt="head-logo" class="img02" />
         </h1>
-        <a href="../index.html" class="btn-sair">
-          <img src="../img/logout.svg" alt="Sair" /> Sair
+        <a href="/index.php" class="btn-sair">
+          <img src="/img/logout.svg" alt="Sair" /> Sair
         </a>
       </div>
     </div>
@@ -31,22 +31,22 @@
     <div id="menu">
       <div class="container">
         <nav>
-          <a href="hub_partida.html">
+          <a href="hub_partida.php">
             <img src="../img/play-fill.svg" class="menu-icon" alt="raking" />
             <p>Jogar</p>
           </a>
-          <a href="profile.html">
-            <img src="../img/person-circle.svg" class="menu-icon" alt="logo" />
+          <a href="profile.php">
+            <img src="/img/person-circle.svg" class="menu-icon" alt="logo" />
             <p>Perfil</p>
           </a>
 
-          <a href="history.html">
-            <img src="../img/Subtract.svg" class="menu-icon" alt="history" />
+          <a href="history.php">
+            <img src="/img/Subtract.svg" class="menu-icon" alt="history" />
             <p>Histórico</p>
           </a>
 
-          <a href="rank.html" class="active">
-            <img src="../img/trophy-fill.svg" class="menu-icon" alt="raking" />
+          <a href="rank.php" class="active">
+            <img src="/img/trophy-fill.svg" class="menu-icon" alt="raking" />
             <p>Ranking</p>
           </a>
         </nav>
@@ -67,7 +67,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -83,7 +83,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -99,7 +99,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -115,7 +115,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -131,7 +131,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -147,7 +147,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -163,7 +163,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -179,7 +179,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -195,7 +195,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -211,7 +211,7 @@
 
           <div class="list-item">
             <div class="player-info">
-              <img src="../img/person-circle.svg" alt="user icon" />
+              <img src="/img/person-circle.svg" alt="user icon" />
               <span>username</span>
             </div>
             <div class="match-info">
@@ -227,8 +227,8 @@
         </div>
 
         <div class="pagination">
-          <img src="../img/play_arrow_filled_left.svg" alt="Página anterio" />
-          <img src="../img/play_arrow_filled.svg" alt="Próxima página" />
+          <img src="/img/play_arrow_filled_left.svg" alt="Página anterio" />
+          <img src="/img/play_arrow_filled.svg" alt="Próxima página" />
         </div>
       </main>
     </div>

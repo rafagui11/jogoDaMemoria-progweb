@@ -20,12 +20,12 @@
     <div class="container">
       <div id="logo">
         <h1>
-          <img src="../img/head-logo.svg" alt="head-logo" class="img01" />
+          <img src="/img/head-logo.svg" alt="head-logo" class="img01" />
           MEMÓRIA
-          <img src="../img/head-logo.svg" alt="head-logo" class="img02" />
+          <img src="/img/head-logo.svg" alt="head-logo" class="img02" />
         </h1>
-        <a href="../index.html" class="btn-sair">
-          <img src="../img/logout.svg" alt="Sair" /> Sair
+        <a href="/index.php" class="btn-sair">
+          <img src="/img/logout.svg" alt="Sair" /> Sair
         </a>
       </div>
     </div>
@@ -130,10 +130,10 @@
           
             <button type="submit" id="btn-register">
               Criar conta
-              <img src="../img/check-lg.svg" alt="Confirmar" />
+              <img src="/img/check-lg.svg" alt="Confirmar" />
             </button>
 
-            <p id="exist-account">Já possui uma conta? <a href="../index.html">Entrar</a></p>
+            <p id="exist-account">Já possui uma conta? <a href="/index.php">Entrar</a></p>
         </form>
       </main>
     </div>

@@ -42,9 +42,9 @@
           id="password"
           required>
 
-        <a href="./pages/register.html" id="botao-criar-conta">Criar Conta</a>
+        <a href="./pages/register.php" id="botao-criar-conta">Criar Conta</a>
 
-        <a href="./pages/hub_partida.html"><img src="img/submit.svg" alt="submit" id="botao-entrar"></a>
+        <a href="./pages/hub_partida.php"><img src="img/submit.svg" alt="submit" id="botao-entrar"></a>
           
       </form>
       <p id="footer">Todos os Direitos Reservados</p>

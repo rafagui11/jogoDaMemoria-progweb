@@ -32,6 +32,6 @@
       localStorage.setItem('memoria_username', nomeInput.value.trim());
     }
 
-    window.location.href = "game.html";
+    window.location.href = "game.php";
   });
 })();

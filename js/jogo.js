@@ -260,7 +260,7 @@
     document.body.appendChild(modalOverlay);
 
     document.getElementById('jogarNovamente').addEventListener('click', () => window.location.reload());
-    document.getElementById('voltarConfig').addEventListener('click', () => window.location.href = '../pages/hub_partida.html');
+    document.getElementById('voltarConfig').addEventListener('click', () => window.location.href = '../pages/hub_partida.php');
   }
 
   function exibirDerrota(motivo='Derrota') {
@@ -296,7 +296,7 @@
     document.body.appendChild(modalOverlay);
 
     document.getElementById('tentarNovamente').addEventListener('click', () => window.location.reload());
-    document.getElementById('voltarConfig2').addEventListener('click', () => window.location.href = '../pages/hub_partida.html');
+    document.getElementById('voltarConfig2').addEventListener('click', () => window.location.href = '../pages/hub_partida.php');
   }
 
   /* Trapaça persistente: mostrar todas ocultas (mantém status real do jogo) */
@@ -357,12 +357,12 @@
     btnDesistir.addEventListener('click', () => {
       clearInterval(timerIntervalo);
       timerIntervalo = null;
-      window.location.href = '../pages/hub_partida.html';
+      window.location.href = '../pages/hub_partida.php';
     });
   }
 
   /* Inicialização na página game.html */
-  if (window.location.pathname.endsWith("game.html")) {
+  if (window.location.pathname.endsWith("game.php")) {
     let config = { linhas: 8, colunas: 8 };
     try {
       const salvo = localStorage.getItem("tabuleiro");
