@@ -1,3 +1,48 @@
+<?php
+session_start(); // Inicia a sessão
+require_once 'db_connection.php'; // Puxa a conexão
+
+// 1. Se o usuário JÁ ESTÁ LOGADO, manda para o hub
+if (isset($_SESSION['user_id'])) {
+    header("Location: pages/hub_partida.php");
+    exit();
+}
+
+$error_message = ''; // Variável para erro
+
+// 2. Verifica se o formulário de login foi enviado
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $user_input = $_POST['user']; // Email ou username
+    $password = $_POST['password'];
+
+    if (empty($user_input) || empty($password)) {
+        $error_message = "Usuário e senha são obrigatórios.";
+    } else {
+        // 3. Busca o usuário no banco
+        $stmt = $pdo->prepare("SELECT id, username, senha FROM usuarios WHERE email = :user_input OR username = :user_input");
+        $stmt->execute(['user_input' => $user_input]);
+        $user = $stmt->fetch();
+
+        // 4. Verifica se o usuário existe E se a senha está correta
+        if ($user && password_verify($password, $user['senha'])) {
+            // Sucesso! Armazena os dados na sessão
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+
+            // Redireciona para o hub
+            header("Location: pages/hub_partida.php");
+            exit();
+        } else {
+            // Falha
+            $error_message = "Usuário ou senha inválidos.";
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+...
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
