@@ -1,10 +1,7 @@
-
 input[type="radio"] {
   display: none;
 }
 
-
-/* Contêiner do retângulo verde */
 #content-hub {
 
   display: flex;
@@ -13,20 +10,20 @@ input[type="radio"] {
   justify-content: space-around;
   align-items: center;
 
-  padding: 1.25rem 3.125rem;
+  padding: 1.5rem 3.75rem;
 
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 
 }
 
-/* Seção dos modos de jogo */
+
 .options {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 5vw;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .modo-opcao {
@@ -36,16 +33,16 @@ input[type="radio"] {
   align-items: center;
   justify-content: center;
 
-  border-radius: 0.75rem;
-  width: 20rem;
-  min-height: 11.25rem;
-  padding: 1rem;
+  border-radius: 0.9rem;
+  width: 24rem;
+  min-height: 13.5rem;
+  padding: 1.2rem;
 
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-/* Estilo do modo selecionado usando o :checked */
+
 input[type="radio"]:checked + .modo-opcao {
   background-color: var(--color-field-input);
 }
@@ -54,34 +51,34 @@ input[type="radio"]:checked + .modo-opcao {
   background-color: var(--color-field-input);
 }
 
-/* Títulos "Clássico" e "Contratempo" */
+
 .title01,
 .title02 {
-  font-size: 1.75rem; 
+  font-size: 2.1rem; 
   color: var(--color-text-general);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-/* Ícones */
+
 .classic,
 .contratempo {
-  width: 7.5rem;
+  width: 9rem;
   height: auto;
 }
 
-/* Linha divisória */
+
 .linha {
   width: 100%;
-  height: 0.125rem; 
+  height: 0.15rem; 
   background-color: var(--color-background-general);
-  border-radius: 0.06rem;
+  border-radius: 0.07rem;
 }
 
 .subtitulo {
-  font-size: 2.3rem; 
+  font-size: 2.75rem; 
   font-weight: bold;
   color: var(--color-text-general);
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.2rem 0;
 }
 
 #config {
@@ -89,8 +86,8 @@ input[type="radio"]:checked + .modo-opcao {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 2rem;
-  gap: 7rem;
+  margin-top: 2.4rem;
+  gap: 8.4rem;
 
   
 }
@@ -99,29 +96,29 @@ input[type="radio"]:checked + .modo-opcao {
   display: flex;
   flex-direction: column;  
   align-items: flex-start; 
-  margin-left:100px;
+  margin-left: 120px;
 }
 
 .config-right {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-right:100px;
+  gap: 19.2px;
+  margin-right: 120px;
 
 }
 
 .tab-options {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .tab-option {
-  font-size: 1.56rem;
+  font-size: 1.9rem;
   color: var(--color-text-general);
   text-decoration: none;
-   width: 5rem;
-  height: 2.2rem;
-  border-radius: 1.5rem; 
+   width: 6rem;
+  height: 2.65rem;
+  border-radius: 1.8rem; 
   transition: background-color 0.3s;
   cursor: pointer;
 
@@ -130,7 +127,7 @@ input[type="radio"]:checked + .modo-opcao {
   align-items: center;
 }
 
-/* Estilo da opção de tabuleiro selecionada usando o :checked */
+
 input[type="radio"]:checked + .tab-option {
   background-color: var(--color-field-input);
 }
@@ -140,21 +137,21 @@ input[type="radio"]:checked + .tab-option {
 }
 
 .iniciar {
-  font-size: 1.7rem;
+  font-size: 2.05rem;
   background-color: var(--color-button);
   color: var(--color-text-general);
   font-weight: bold;
   text-decoration: none;
-  width: 10.3rem;
-  height: 3.75rem;
-  border-radius: 1.625rem; 
+  width: 12.5rem;
+  height: 4.5rem;
+  border-radius: 1.95rem; 
   transition: background-color 0.3s;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-    box-shadow: 0.2rem 0.2rem black;
+    box-shadow: 0.24rem 0.24rem black;
 
 }
 

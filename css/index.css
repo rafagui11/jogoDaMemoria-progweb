@@ -5,30 +5,30 @@ html, body {
 }
 
 .head-logo{
-  width: 4.375rem;
+  width: 5.25rem;
   height: auto;
-  transform: translateY(1.125rem);
+  transform: translateY(1.35rem);
 }
 
 .head-logo.left {
- transform: scaleX(-1) translateY(1.125rem);
+ transform: scaleX(-1) translateY(1.35rem);
 
 }
 #memoria-text{
   display: inline;
   color: var(--color-text-general);
-  font-size: 3.2em;   
-  padding: 0 2rem;              
+  font-size: 3.85em;   
+  padding: 0 2.4rem;              
 
 }
 #Formulario {
   display: flex;
   flex-direction: column;
   background-color: var( --color-background-forms);
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
   min-height: 100vh;
-  padding: 0 10px 0 10px;
+  padding: 0 12px 0 12px;
 
   justify-content: center; 
 
@@ -36,9 +36,9 @@ html, body {
 
 #Formulario h2{
   color: var(--color-text-general);
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 100;
-  margin: 3rem 0 1.25rem 0;
+  margin: 3.6rem 0 1.5rem 0;
 
 }
 
@@ -47,19 +47,19 @@ html, body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 #Formulario input{
-  border-radius: 2.4rem;
+  border-radius: 2.9rem;
 
   color: var(--color-text-general);
 
   border: none;
 
   width: 100%;
-  height: 4rem;
-  max-width: 22rem;
+  height: 4.8rem;
+  max-width: 26.5rem;
 
   background: var(--color-field-input);
   text-align: center;
@@ -68,16 +68,16 @@ html, body {
 #Formulario input::placeholder{
   color: var(--color-label-text);
   text-align: center;
-  font: italic 400 1.6rem "Quantico", sans-serif; 
+  font: italic 400 1.95rem "Quantico", sans-serif; 
   line-height: normal;
 }
 
 #Formulario #user{
-   margin-bottom: 2rem;
+   margin-bottom: 2.4rem;
 }
 
 #Formulario #password{
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 #Formulario #botao-criar-conta {
@@ -88,15 +88,15 @@ html, body {
   background-color: var(--color-button);
   color: var(--color-text-general);
 
-  font: normal 700 1.4rem "Quantico", sans-serif;
+  font: normal 700 1.7rem "Quantico", sans-serif;
   text-align: center;
   text-decoration: none;
 
-  width: 15rem;
-  height: 2.7rem;
-  border-radius: 1.6rem; 
+  width: 18rem;
+  height: 3.25rem;
+  border-radius: 1.95rem; 
 
-  box-shadow: 0.2rem 0.2rem black;
+  box-shadow: 0.24rem 0.24rem black;
 
 }
 
@@ -106,32 +106,29 @@ html, body {
   cursor: pointer;
 }
 
-/* 1. Estilo do BOTÃO (o container) */
+
 #botao-entrar {
-    background-color: transparent; /* Fundo transparente */
-    border: none;                  /* Sem borda */
-    padding: 0;                    /* Sem espaçamento */
-    cursor: pointer;               /* Mãozinha do mouse */
+    background-color: transparent; 
+    border: none;                  
+    padding: 0;                    
+    cursor: pointer;               
+   
+    transform: translateY(3.6rem);
     
-    /* O posicionamento que você queria */
-    transform: translateY(3rem);
-    
-    /* Garante que o botão não tenha tamanho extra */
+   
     display: inline-block;
 }
 
-/* 2. Estilo da IMAGEM dentro do botão */
 #botao-entrar img {
-    width: 7rem;       /* O tamanho que você definiu antes */
-    height: auto;      /* Mantém a proporção */
-    display: block;    /* Remove espaços brancos fantasmas abaixo da imagem */
+    width: 8.5rem;       
+    height: auto;      
+    display: block;    
 }
 
 
 #footer{
   color: var(--color-text-general);
   text-align: center;
-  font-size: 1.125rem; 
-  margin-top: 8rem;
+  font-size: 1.35rem; 
+  margin-top: 9.6rem;
 }
-
