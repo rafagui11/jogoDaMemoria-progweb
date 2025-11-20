@@ -1,58 +1,55 @@
-Tutorial básico de git: [https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link](https://www.notion.so/GIT-GITHUB-231254d9302e8044b3b1cca361ba0311?source=copy_link)
+
+### 1. Instalação do Ambiente
+1. Baixe e instale o [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+2. Abra o **XAMPP Control Panel**.
+3. Inicie os módulos **Apache** e **MySQL** (clique em "Start").
+   - *Nota:* Verifique se o MySQL ficou verde. Se a porta for `3307` em vez de `3306`, verifique o arquivo `db-connection.php` no projeto.
+
+### 2. Configuração da Pasta
+1. Localize a pasta de instalação do XAMPP (geralmente `C:\xampp`).
+2. Entre na pasta `htdocs`.
+3. Cole a pasta do projeto aqui dentro.
+   - Caminho final deve ser algo como: `C:\xampp\htdocs\TRABALHO-PROGWEB`.
+
+### 3. Configuração do Banco de Dados (Automática)
+Não é necessário criar tabelas manualmente. Criamos um script para isso.
+
+1. Abra seu navegador.
+2. Acesse: `http://localhost/TRABALHO-PROGWEB/setup.php` (ajuste o nome da pasta se for diferente).
+3. Se vir a mensagem **"Setup concluído!"**, o banco `jogo_memoria` e as tabelas `usuarios` e `partidas` foram criados.
+4. **Apague** ou renomeie o arquivo `setup.php` após o uso por segurança.
+
+### 4. Acessando o Jogo
+1. No navegador, acesse: `http://localhost/TRABALHO-PROGWEB/index.php`
+2. Crie uma conta e faça login.
 
 
-### 1. Configuração inicial (uma vez só)
+### ✅ O que já está pronto (Back-end & BD)
+- [x] Conexão com Banco de Dados (`db-connection.php`).
+- [x] Script de criação de tabelas (`setup.php`).
+- [x] Sistema de Login e Logout (`index.php`, `logout.php`).
+- [x] Sistema de Cadastro (`register.php`).
+- [x] Proteção de rotas (apenas logados acessam o Hub).
+- [x] Página de Perfil (Edição de dados e senha).
+- [x] Páginas de Histórico e Ranking (lógica de leitura do BD pronta).
+- [x] Endpoint para salvar partida (`save_game.php`).
 
-```bash
-git clone https://github.com/usuario/repositorio.git
-cd repositorio
-```
------>O que NÃO fazer<------
-```bash
-NUNCA FAÇA GIT INIT PORRA
-❌ Não commitar diretamente na main
-❌Nunca programe direto na main.
-❌ Não trabalhar na mesma branch que outros
-❌ Não fazer push de código quebrado
-❌ Não ignorar reviews de código
-```
+### 🚧 O que FALTA fazer (Front-end & JS)
+O foco agora deve ser exclusivamente na pasta `js/` e na lógica do jogo:
+
+1.  **Conexão Hub -> Jogo:**
+    - O `hub_partida.php` já envia via URL (GET) o modo e tamanho (ex: `game.php?tabuleiro=4x4`).
+    - **Falta:** Editar o `js/jogo.js` para ler esses parâmetros da URL e gerar o grid correto (2x2, 4x4, 6x6, 8x8).
+
+2.  **Salvar Partida:**
+    - **Falta:** No `js/jogo.js`, quando o usuário vencer, chamar a função `fetch` para enviar os dados para `save_game.php`.
+
+3.  **CSS Final:**
+    - Revisar responsividade se necessário.
+
 ---
 
-### 2. Antes de começar a programar(branches)
+## ⚠️ Avisos Importantes
 
-Sempre crie uma branch nova para sua tarefa!!!!!!! --> IMPORTANTEEEEEE 
-
-```bash
-git checkout main        # Ir para a branch principal
-git pull origin main     # primeiro puxar do repositório remoto a versão mais recente do projeto antes de começar a codar
-git checkout -b feature/minha-tarefa   # Criar nova branch(ramificação) para sua tarefa, dai se vc fizer cagada não vai ter estragado o projeto por que vc fez uma ramificação dele
-```
-
----
-
-### 3. Durante o desenvolvimento
-```bash
-✅ Cada tarefa/bug/feature = 1 branch nova.
-✅ Nomeie suas branches de forma clara: feature/cadastro-usuario fix/seila
-✅ Sempre atualize sua branch antes do merge. 
-```
-Trabalhe apenas dentro da sua branch pelo amor de deus senhor
-```bash
-git add .                                 # Adicionar alterações feitas, isso adiciona TODAS, tem que por o ponto final
-git commit -m "feat: descreva bem o que fez"   # Registrar alteração: detalhe o mais possível as mudanças que vc fez pq isso fica registrado tb, coloque oq tem que arrumar oq arrumou etc TUDO    
-git push -u origin feature/minha-tarefa   # Enviar para o GitHub: repositório remoto. --> aqui pode dar muitos erros preste bem atenção, vai usando o git status pra entender o pq do probelma
-```
-
-faça commits pequenos e claros! e nao de uma vez 
-
----
-
-### 4. Quando terminar
-
-```bash
-git fetch origin
-git merge origin/main     # Mescla a sua ramificação com o original, ou seja, adiciona suas mudanças no projeto de verdade 
-
-
-
-
+- **NÃO abra o arquivo HTML/PHP clicando duas vezes.** O PHP precisa do servidor Apache. Sempre use `http://localhost/...`.
+- **Porta do MySQL:** Se o XAMPP usar a porta `3307` (comum em conflitos), certifique-se de que o arquivo `db-connection.php` reflete isso: `$port = '3307';`.
