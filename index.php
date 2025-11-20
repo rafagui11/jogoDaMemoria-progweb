@@ -19,8 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error_message = "Usuário e senha são obrigatórios.";
   } else {
     // 3. Busca o usuário no banco
-    $stmt = $pdo->prepare("SELECT id, username, senha FROM usuarios WHERE email = :user_input OR username = :user_input");
-    $stmt->execute(['user_input' => $user_input]);
+    // CORREÇÃO: Usamos dois nomes diferentes (:email e :user) para não confundir o PDO
+    $sql = "SELECT id, username, senha FROM usuarios WHERE email = :email OR username = :user";
+
+    $stmt = $pdo->prepare($sql);
+
+    // Passamos o mesmo valor ($user_input) para os dois lugares
+    $stmt->execute([
+      ':email' => $user_input,
+      ':user' => $user_input
+    ]);
+
     $user = $stmt->fetch();
 
     // 4. Verifica se o usuário existe E se a senha está correta
@@ -39,10 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 }
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-...
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -95,8 +100,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       <a href="./pages/register.php" id="botao-criar-conta">Criar Conta</a>
 
-      <button type="submit" id="botao-entrar" style="border: none; background: none; cursor: pointer;">
-        <img src="img/submit.svg" alt="submit">
+      <button type="submit" style="background: transparent; border: none; padding: 0; cursor: pointer; transform: translateY(3rem);">
+        <img src="img/submit.svg" alt="submit" style="width: 7rem; height: auto; display: block;">
       </button>
 
     </form>

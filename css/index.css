@@ -106,9 +106,25 @@ html, body {
   cursor: pointer;
 }
 
-img#botao-entrar{
-  width: 7rem;
-  transform: translateY(3rem)
+/* 1. Estilo do BOTÃO (o container) */
+#botao-entrar {
+    background-color: transparent; /* Fundo transparente */
+    border: none;                  /* Sem borda */
+    padding: 0;                    /* Sem espaçamento */
+    cursor: pointer;               /* Mãozinha do mouse */
+    
+    /* O posicionamento que você queria */
+    transform: translateY(3rem);
+    
+    /* Garante que o botão não tenha tamanho extra */
+    display: inline-block;
+}
+
+/* 2. Estilo da IMAGEM dentro do botão */
+#botao-entrar img {
+    width: 7rem;       /* O tamanho que você definiu antes */
+    height: auto;      /* Mantém a proporção */
+    display: block;    /* Remove espaços brancos fantasmas abaixo da imagem */
 }
 
 

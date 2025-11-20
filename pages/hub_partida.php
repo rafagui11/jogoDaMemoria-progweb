@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <title>Memoria - Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/hub_partida.css" rel="stylesheet" />
-    <link href="/css/main.css" rel="stylesheet" />
+    <link href="../css/hub_partida.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,12 +18,12 @@
     <div class="container">
       <div id="logo">
         <h1>
-          <img src="/img/head-logo.svg" alt="head-logo" class="img01" />
+          <img src="../img/head-logo.svg" alt="head-logo" class="img01" />
           MEMÓRIA
-          <img src="/img/head-logo.svg" alt="head-logo" class="img02" />
+          <img src="../img/head-logo.svg" alt="head-logo" class="img02" />
         </h1>
         <a href="/index.php" class="btn-sair">
-          <img src="/img/logout.svg" alt="Sair" /> Sair
+          <img src="../img/logout.svg" alt="Sair" /> Sair
         </a>
       </div>
     </div>
@@ -33,19 +33,19 @@
       <div class="container">
         <nav>
           <a href="hub_partida.php" class="active">
-            <img src="/img/play-fill.svg" class="menu-icon" alt="jogar" />
+            <img src="../img/play-fill.svg" class="menu-icon" alt="jogar" />
             <p>Jogar</p>
           </a>
           <a href="profile.php">
-            <img src="/img/person-circle.svg" class="menu-icon" alt="perfil" />
+            <img src="../img/person-circle.svg" class="menu-icon" alt="perfil" />
             <p>Perfil</p>
           </a>
           <a href="history.php">
-            <img src="/img/Subtract.svg" class="menu-icon" alt="historico" />
+            <img src="../img/Subtract.svg" class="menu-icon" alt="historico" />
             <p>Histórico</p>
           </a>
           <a href="rank.php">
-            <img src="/img/trophy-fill.svg" class="menu-icon" alt="ranking" />
+            <img src="../img/trophy-fill.svg" class="menu-icon" alt="ranking" />
             <p>Ranking</p>
           </a>
         </nav>
@@ -60,13 +60,13 @@
             <input type="radio" name="modo" id="classico" value="classica" checked />
             <label for="classico" class="modo-opcao">
               <p class="title01">Clássico</p>
-              <img class="classic" src="/img/classic_game.svg" alt="classico" />
+              <img class="classic" src="../img/classic_game.svg" alt="classico" />
             </label>
 
             <input type="radio" name="modo" id="contratempo" value="contra" />
             <label for="contratempo" class="modo-opcao">
               <p class="title02">Contratempo</p>
-              <img class="contratempo" src="/img/clock-icon.svg" alt="contratempo" />
+              <img class="contratempo" src="../img/clock-icon.svg" alt="contratempo" />
             </label>
           </div>
 
