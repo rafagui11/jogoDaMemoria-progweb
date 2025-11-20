@@ -1,13 +1,11 @@
 <?php
-// Configurações do banco de dados
+
 $host = 'localhost'; 
-$port = '3307'; // A porta que corrigimos!
-$dbname = 'jogo_memoria'; // O nome do banco que você acabou de criar
+$port = '3307'; 
+$dbname = 'jogo_memoria'; 
 $user = 'root'; 
 $pass = ''; 
 $charset = 'utf8mb4';
-
-// DSN (Data Source Name) - String de conexão
 $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=$charset";
 
 $options = [
